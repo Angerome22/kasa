@@ -1,10 +1,7 @@
-import React from "react";
+import Header from "../../components/Header/header";
 
 export default function PropertyListing() {
     return (
-        <div>
-            <h1>Housing sheet</h1>
-            
-        </div>
+        <Header />
     )
 }

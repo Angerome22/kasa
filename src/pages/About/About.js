@@ -1,9 +1,14 @@
-import React from "react";
+import Banner from "../../components/Banner/banner";
+import Header from "../../components/Header/header";
+import pictureBanner2 from "../../assets/picture/pictureBanner2.png"
+
 
 export default function About() {
     return (
         <div>
-            <h1>About</h1>
+        <Header />
+        <Banner picture={pictureBanner2} />
         </div>
     )
 }
+
