@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './App.scss';
+import {Routes, Route} from 'react-router-dom'
+import Home from './pages/Home/Home'
+import PropertyListing from './pages/PropertyListing/PropertyListing';
+import About from './pages/About/About';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
+import Header from './components/Header/header';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         ici commence le projet kasa
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ESSAI
-        </a>
-      </header>
+      
+      <Header />
+      <Routes>
+        <Route  path="/" element={<Home />} />
+        <Route  path="/PropertyListing/:id" element={<PropertyListing />} />
+        <Route  path="/About" element={<About />} />
+        <Route  path="/ErrorPage" element={<ErrorPage />} />
+      </Routes>
+      
     </div>
   );
 }
