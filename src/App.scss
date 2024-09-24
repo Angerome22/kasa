@@ -33,11 +33,10 @@ a:-webkit-any-link{
 
 .App-nav ul{
   display: flex;
-  list-style: none;
-  width: 309px;
-  height: 34px;
+  justify-items: right;
+  list-style: none;  
   gap: 57px; 
-  
+  padding: 0px; 
   }
 
 .App-link a{
@@ -55,13 +54,14 @@ a:visited {
 /******************************BANNER*******************/
 
 .App-banner {
-position: relative;
-display: inline-block;
-width: 1240px;
-height: 223px;
-margin: 0px 100px;
-box-shadow: 0px 4px 4px 0px #00000040;
-background: #F6F6F6;
+  position: relative;
+  display: inline-block;
+  width: 1240px;
+  height: 223px;
+  margin: 0px 100px 50px 100px;
+  background: #F6F6F6;
+  border: none;
+
 }
 
 .banner-picture {
@@ -70,6 +70,10 @@ background: #F6F6F6;
   object-fit: cover; 
   display: block;
   border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  opacity: 0.6;
+  border: none;
+  mix-blend-mode: darken;
   }
 
 .banner-text {
@@ -85,6 +89,90 @@ background: #F6F6F6;
   transform: translate(-50%, -50%);  
     }
     
+/******************************GALERRY*******************/
+.App-gallery {
+  width: 1240px;   
+  border-radius: 25px;
+  background: #F6F6F6;  
+  margin: 0px 100px;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 55px;
+  box-sizing: border-box;
+}
+
+.gallery-card {  
+  width: 340px;
+  height: 340px;
+  position:relative;
+  border-radius: 10px; 
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 55px 0px;
+  box-sizing: border-box;
+}
+
+.gallery-card .card {
+  width: 340px;
+  height: 340px;
+}
+
+
+.gallery-picture {
+  object-fit: cover;
+  width: 100%;
+  height: 340px;
+  border-radius: 10px;
+}
+
+.gallery-title {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25.67px;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 52px;
+  padding: 10px;
+  color: #FFFFFF;
+}
+
+/******************************FOOTER*******************/
+
+.App-footer {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 1440px;
+  height: 209px;
+  background-color: #000000;
+}
+
+.App-logo-footer {
+  width: 122px;
+  height: 39.44px; 
+  margin-top: 66px; 
+}
+
+.text-footer {
+  width: 513px;
+  height: 46px; 
+  color:#FFFFFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34.22px; 
+  text-align: center; 
+  margin-top: 26.56px;
+}
+
+
+
+
+
 
 
 
@@ -97,7 +185,17 @@ background: #F6F6F6;
   }
 }*/
 
+@media (max-width: 768px) {
+  .App-gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur les écrans moyens */
+  }
+}
 
+@media (max-width: 480px) {
+  .App-gallery {
+    flex-direction: column;
+  }
+}
 
 
 
