@@ -1,4 +1,4 @@
-import './App.scss';
+import './styles/index.scss';
 import {Routes, Route} from 'react-router-dom'
 import Home from './pages/Home/Home'
 import PropertyListing from './pages/PropertyListing/PropertyListing';
@@ -14,7 +14,7 @@ function App() {
         <Route  path="/" element={<Home />} />
         <Route  path="/PropertyListing/:id" element={<PropertyListing />} />
         <Route  path="/About" element={<About />} />
-        <Route  path="/ErrorPage" element={<ErrorPage />} />
+        <Route  path="*" element={<ErrorPage />} />
       </Routes>
       
     </div>

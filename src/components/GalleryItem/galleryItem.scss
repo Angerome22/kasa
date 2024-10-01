@@ -1,0 +1,37 @@
+.gallery-card {  
+    width: 340px;
+    height: 340px;
+    position:relative;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 55px 0px;
+    box-sizing: border-box;
+  }
+  
+  .gallery-card .card {
+    width: 340px;
+    height: 340px;
+  }
+  
+  
+  .gallery-picture {
+    object-fit: cover;
+    width: 100%;
+    height: 340px;
+    border-radius: 10px;
+  }
+  
+  .gallery-title {
+    position: absolute;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25.67px;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 52px;
+    padding: 10px;
+    color: #FFFFFF;
+  }

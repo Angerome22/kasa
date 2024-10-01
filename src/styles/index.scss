@@ -1,0 +1,62 @@
+@import '../styles/colorVariables.scss';
+
+@import '../components/Banner/banner.scss';
+@import '../components/Header/header.scss';
+@import '../components/Footer/footer.scss';
+@import '../components/Gallery/gallery.scss';
+@import '../components/GalleryItem/galleryItem.scss';
+@import '../components/Collapse/collapse.scss';
+@import '../components/CollapseItem/collapseItem.scss';
+
+@import '../pages/ErrorPage/error.scss';
+
+
+body {
+  
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+a:-webkit-any-link{
+  color: black;
+  text-decoration: none;
+}
+
+/*.main-container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}*/
+
+
+
+    
+
+
+
+
+
+
+
+
+
+/*@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}*/
+
+
+
+
+
+
+/*@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/

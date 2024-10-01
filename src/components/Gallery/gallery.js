@@ -1,6 +1,5 @@
-
-import Card from "../Card/card";
 import logements from '../../datas/logements.json'
+import GalleryItem from "../GalleryItem/galleryitem";
 
 export default function Gallery() {
 
@@ -8,8 +7,9 @@ export default function Gallery() {
         
         <div className="App-gallery">
             {logements.map((logement) => (
-                <Card
-                    key={logement.id}  
+                <GalleryItem
+                    key={logement.id}
+                    id={logement.id}  
                     cover={logement.cover}
                     title={logement.title}
                 />
@@ -18,3 +18,5 @@ export default function Gallery() {
     );
     
 } 
+
+

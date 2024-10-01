@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types'
+/*import PropTypes from 'prop-types'
 
 
-export default function Card({ cover = '', title=''}) {
+export default function Card({ cover = '', title= ''}) {
     return ( 
         <div className="gallery-card">
             <article className="card">               
@@ -19,6 +19,6 @@ export default function Card({ cover = '', title=''}) {
 Card.propTypes = {
     cover: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,    
-  }
+  }*/
 
 

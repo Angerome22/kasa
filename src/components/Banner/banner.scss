@@ -1,0 +1,40 @@
+/******************************BANNER*******************/
+@import '../../styles/colorVariables.scss';
+
+.App-banner {
+    position: relative;
+    display: inline-block;
+    width: 1240px;
+    height: 223px;
+    margin: 0px 100px 50px 100px;
+    background: map-get($colors, secondary);
+    border: none;
+  
+  }
+  
+  .banner-picture {
+    width: 100%;
+    height: 223px;
+    object-fit: cover; 
+    display: block;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    opacity: 0.6;
+    border: none;
+    mix-blend-mode: darken;
+    }
+  
+  .banner-text {
+    width: 1240px;
+    height: 223px;
+    margin:0;
+    position: absolute;   
+    color: white;   
+    text-align: center;    
+    font-size: 32px;
+    font-weight: 700;    
+    line-height: 68.45px;
+    top:65%;
+    left: 50%;      
+    transform: translate(-50%, -50%);  
+      }
