@@ -1,19 +1,17 @@
-.gallery-card {  
-    width: 340px;
+  .gallery-card{  
+    width: calc(33% - 55px);
     height: 340px;
     position:relative;
-    border-radius: 10px; 
-    display: flex;
-    flex-direction: column;
-    margin: 0px 0px 55px 0px;
-    box-sizing: border-box;
+    border-radius: 10px;     
+    box-sizing: border-box; 
+    
   }
   
   .gallery-card .card {
     width: 340px;
     height: 340px;
+    
   }
-  
   
   .gallery-picture {
     object-fit: cover;
@@ -24,7 +22,6 @@
   
   .gallery-title {
     position: absolute;
-    font-family: 'Montserrat';
     font-size: 12px;
     font-weight: 700;
     line-height: 25.67px;
@@ -32,6 +29,12 @@
     left: 0;
     width: 300px;
     height: 52px;
-    padding: 10px;
+    padding: 15px;
     color: #FFFFFF;
   }
+
+  @media (max-width: 768px) {
+    .gallery-card{  
+      width: calc(50% - 55px);
+  }
+}

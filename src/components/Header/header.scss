@@ -3,7 +3,8 @@
     display: flex;   
     justify-content: space-between;
     height: 68px;
-    width: 1240px;
+    max-width: 1240px;
+    width: 100%;
     margin : 45px 100px 50px 100px;
   
   }
@@ -37,4 +38,16 @@
   /*a:active {
     
   } */ 
-  
+  @media (max-width: 768px) {
+    .App-header {
+      height: 46.88px;
+      max-width: 335px;     
+         
+    }
+
+
+
+    .gallery-card{  
+      width: calc(50% - 55px);
+  }
+}

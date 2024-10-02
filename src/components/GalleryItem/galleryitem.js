@@ -12,17 +12,17 @@ const GalleryItem = ({ cover, id, title}) => {
 
 return (
       /*<div className="gallery-item" onClick={toggleGallery}>*/
-      <div className="gallery-item">
+      
       <div className="gallery-card">
-            <article className="card">
+            
             <Link to={`/PropertyListing/${id}`}>
                     <img src={cover} className="gallery-picture" alt="apartment" /></Link>
                     <div className="gallery-title">
                         <h2 >{title}</h2>
                     </div> 
-            </article>    
+             
         </div> 
-      </div>  
+      
      
   );
 };

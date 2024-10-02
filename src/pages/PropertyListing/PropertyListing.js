@@ -1,8 +1,8 @@
 import Footer from "../../components/Footer/footer";
 import Header from "../../components/Header/header";
-import HousingSheet from "../../components/HousingSheet/housinSheet";
 import { useParams, Navigate } from "react-router-dom";
-import logements from '../../datas/logements.json'
+import logements from '../../datas/logements.json';
+import Host from '../../components/Host/host'
 
 
 export default function PropertyListing() {
@@ -19,7 +19,7 @@ export default function PropertyListing() {
     return (
         <div>
         <Header />
-        <HousingSheet />
+        <Host name={logement.host.name} picture={logement.host.picture} />
         <Footer />
         </div>
     );

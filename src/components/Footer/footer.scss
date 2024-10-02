@@ -3,11 +3,12 @@
 .App-footer {
     display: flex;
     flex-direction: column; 
-    align-items: center;
-    justify-self: flex-end;
+    align-items: center;    
     max-width: 1440px;
+    width: 100%;
     height: 209px;
     background-color: #000000;
+    box-sizing:border-box;
   }
   
   .App-logo-footer {

@@ -9,9 +9,9 @@ export default function ErrorPage() {
         <div className="errorPage">
             <Header />        
             <div className="errorContainer">
-                <h1 className="errorTitle">404</h1>
-                <h2 className="errorText">Oups! La page que vous demandez n'existe pas</h2>
-                <nav className="errorLink"> <Link to="/">Retourner sur la page d'accueil</Link> </nav>
+                <div className="errorTitle">404</div>
+                <div className="errorText">Oups! La page que vous demandez n'existe pas</div>
+                <div className="errorLink"> <Link to="/">Retourner sur la page d'accueil</Link> </div>
             </div>
             <Footer />
 

@@ -1,23 +1,19 @@
 /******************************GALERRY*******************/
 .App-gallery {
+
     width: 1240px;   
     border-radius: 25px;
     background: #F6F6F6;  
-    margin: 0px 100px;  
+    margin: 0px 100px 55px 100px;  
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 55px;
+    justify-content: flex-start;   
     box-sizing: border-box;
-  }
-  
-  
+    gap: 55px;
+    padding: 55px 0px 55px 55px;      
+  } 
 
-  /*@media (max-width: 768px) {
-    .App-gallery {
-      grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur les écrans moyens 
-    }
-  }*/
+  
   @media (max-width: 480px) {
     .App-gallery {
       flex-direction: column;
