@@ -1,17 +1,12 @@
 
 export default function Host({ name, picture }) {
-    
+    const modifiedName = name.replace(' ', '\n');
 
     return ( 
         
         <div className="App-host">            
-                
-                <img src={picture} className="host-picture" alt="portrait de l'hôte" />
-                <div className="host-name">
-                    <h2>{name}</h2>
-                </div>
-                
-            
+            <h2 className="host-name" >{modifiedName}</h2>           
+            <img src={picture} className="host-picture" alt="portrait de l'hôte" />
         </div>
     );
     
