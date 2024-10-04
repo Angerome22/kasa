@@ -5,6 +5,9 @@ import logements from '../../datas/logements.json';
 import Host from '../../components/Host/host'
 import SlideShow from "../../components/Slideshow/slideShow";
 import Tags from "../../components/Tags/tag";
+import Rating from "../../components/Rating/rating";
+import Collapse from "../../components/Collapse/collapse";
+
 
 
 
@@ -19,6 +22,16 @@ export default function PropertyListing() {
         
       }
 
+  const collapseData = [
+    { label: "Description", content: <div> <p>{logement.description}</p> </div>},
+    { label: "Equipements", content: (
+        <ul> {logement.equipments.map((equipment, index) => (
+          <li key={index}>{equipment}</li>
+        ))}
+        </ul>   
+    )
+  }
+]
     return (
         <div>
         <Header /> 
@@ -34,8 +47,14 @@ export default function PropertyListing() {
           </div>
         </div>
         <div className="propertyBody2">
-        <Tags  />
-        </div> 
+          <div className="tag-container">
+            <Tags tags={logement.tags}  />
+          </div>
+          <div className="rating-container">
+            <Rating rating={logement.rating} />
+          </div>
+        </div>        
+        <Collapse data={collapseData} />          
         <Footer />
         </div>
     );

@@ -1,0 +1,17 @@
+.App-rating {
+    display: flex;
+    width: 196px;
+    height: 36px;
+    gap: 10px;
+
+    .fa-star{
+        font-size: 24px;
+    }
+
+    .active{
+      color: #ff6060;
+    }
+    .inactive{
+       color: #e3e3e3; 
+    }
+}

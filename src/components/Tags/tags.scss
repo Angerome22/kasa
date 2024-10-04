@@ -1,0 +1,18 @@
+.App-tags { 
+    display: flex;    
+    gap: 10px;   
+    height: 25px;
+
+    .tags-button {   
+    background-color: #ff6060;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;    
+    align-items: center;
+    align-content: center;
+    padding: 5px 15px;
+   
+}
+}

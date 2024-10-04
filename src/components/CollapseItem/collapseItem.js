@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import icon from '../../assets/arrow_back_ios-24px 2@2x.png'
 
-const CollapseItem = ({ title, content}) => {
+
+const CollapseItem = ({ label, children}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleCollapse = () => {
@@ -10,19 +10,23 @@ const CollapseItem = ({ title, content}) => {
 
 
 return (
-<div className="app-collapse">
+<div>
       <div className="collapse-item"
         onClick={toggleCollapse}         
       >
-        <h4 className="collapse-title">{title}</h4>
-        <img src={icon} alt="flèche de déroulement" className="arrowback"></img>
+        <h4 className="collapse-title">{label}</h4>
+        {!isOpen ? (
+                    <i className="fa-solid fa-chevron-up arrow-icon"></i>
+                ) : (
+                    <i className="fa-solid fa-chevron-down arrow-icon"></i>
+                )}
       </div>
       {isOpen && (
         <div className="collapse-content">
-          <p>{content}</p>
+          {children}
         </div>
       )}
-    </div>
+</div>
   );
 
 };
