@@ -25,8 +25,13 @@
         padding: 10px;
         box-sizing: border-box;  
         margin-bottom: 20px; 
-       
+        overflow: hidden;
+        transition: max-height 0.8s ease, padding 0.8s ease; 
                 }
+
+        .collapse-container.show {
+            max-height: 500px;
+        }        
     .collapse-item + .collapse-content {
         margin-top: -38px;
     } 

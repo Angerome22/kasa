@@ -13,14 +13,15 @@ const CollapseItem = ({ label, children}) => {
 return (
 <div>
       <div className="collapse-item"
-        onClick={toggleCollapse}         
+              
       >
         <h4 className="collapse-title">{label}</h4>
                     <i
-                    className={`fa-solid arrow-icon ${
-                      isOpen ? "fa-chevron-down" : "fa-chevron-up"
+                    onClick={toggleCollapse}   
+                    className={`fa-solid fa-chevron-up arrow-icon ${
+                      isOpen ? "rotate" : ""
                     }`}
-                    onClick={toggleCollapse} // Le collapse se déclenche uniquement au clic sur l'icône
+                    
                   ></i>
                 </div>
           
