@@ -1,3 +1,4 @@
+import React from "react";
 export default function Banner({ picture, text }) {
     return ( 
         <div className="App-banner">

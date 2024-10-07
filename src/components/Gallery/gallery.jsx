@@ -1,3 +1,4 @@
+import React from "react";
 import logements from '../../datas/logements.json'
 import GalleryItem from "../GalleryItem/galleryitem";
 
