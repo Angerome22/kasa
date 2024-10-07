@@ -33,6 +33,35 @@
   .collapse-container {
     display:flex;
     flex-direction: row;
+    max-width: 1240px;
+    width: 100%;
+    justify-content: space-between;
+    margin : 45px 100px 50px 100px;        
+  }
+  
+
+      .collapse-content {
+        background-color: #F6F6F673;
+        font-size: 18px;
+        font-weight: 400;    
+        text-align: justify; 
+        padding: 10px;
+
+          p {
+            max-width: 582px;  
+            width: 100%;
+            margin: 0; 
+            margin-bottom: 10px; 
+
+          }
+          
+          ul {
+            margin:0;
+            padding: 20px;   
+        }
+            li {           
+              list-style: none;   
+      }
   }
 
 

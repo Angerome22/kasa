@@ -4,8 +4,9 @@ import React, { useState } from "react";
 const CollapseItem = ({ label, children}) => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleCollapse = () => {
-        setIsOpen(!isOpen)
+    const toggleCollapse = (e) => {
+      e.stopPropagation();
+        setIsOpen(!isOpen);
     }
 
 
@@ -15,19 +16,16 @@ return (
         onClick={toggleCollapse}         
       >
         <h4 className="collapse-title">{label}</h4>
-        {!isOpen ? (
-                    <i className="fa-solid fa-chevron-up arrow-icon"></i>
-                ) : (
-                    <i className="fa-solid fa-chevron-down arrow-icon"></i>
-                )}
-      </div>
-      {isOpen && (
-        <div className="collapse-content">
-          {children}
-        </div>
-      )}
-</div>
-  );
-
-};
+                    <i
+                    className={`fa-solid arrow-icon ${
+                      isOpen ? "fa-chevron-down" : "fa-chevron-up"
+                    }`}
+                    onClick={toggleCollapse} // Le collapse se déclenche uniquement au clic sur l'icône
+                  ></i>
+                </div>
+          
+                {isOpen && <div className="collapse-content">{children}</div>}
+              </div>
+            );
+          };
 export default CollapseItem;

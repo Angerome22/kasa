@@ -1,18 +1,45 @@
 // media responsive à ajouter
 .about-collapse {
 
+    .collapse-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 208.5px 38px 208.5px;
+        
+    }
+    
     .collapse-item { 
-        display: flex;    
-        width: 1023px;
+        display: flex;           
+        width: 1023px;       
         height: 54px;    
-        margin-bottom: 30px;
-        margin-left:178.5px;
+        margin: 0; 
+        margin-bottom: 38px;     
     }
-    .collapse-content  {
-        width: 1023px;
-        margin-left:178.5px;
-        margin-bottom: 30px;
-    }
+    .collapse-content{   
+        background-color: #F6F6F673;
+        font-size: 18px;
+        font-weight: 400;    
+        text-align: justify;
+        max-width: 1043px;  
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;  
+        margin-bottom: 20px; 
+       
+                }
+    .collapse-item + .collapse-content {
+        margin-top: -38px;
+    } 
+    @media (max-width: 1024px) {
+        .collapse-container {
+          margin: 0 20px 38px 20px;
+        }
+    
+        .collapse-item, 
+        .collapse-content {
+          width: 100%; 
+        }
+    
   }
-
+}
  
