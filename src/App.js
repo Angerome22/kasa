@@ -1,5 +1,5 @@
 import './styles/index.scss';
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, Navigate} from 'react-router-dom'
 import Home from './pages/Home/Home'
 import PropertyListing from './pages/PropertyListing/PropertyListing';
 import About from './pages/About/About';
@@ -12,11 +12,13 @@ function App() {
     <div className="App">    
       
       <Routes>
-        <Route element={<Layout />} />
+        <Route element={<Layout />}>
           <Route  path="/" element={<Home />} />
           <Route  path="/PropertyListing/:id" element={<PropertyListing />} />
           <Route  path="/About" element={<About />} />
-          <Route  path="*" element={<ErrorPage />} />
+          <Route path="/404" element={<ErrorPage />} />
+          <Route path="*" element={<Navigate to="/404" />} />
+        </Route>  
       </Routes>
       
     </div>

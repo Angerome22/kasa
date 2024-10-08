@@ -1,5 +1,3 @@
-import Footer from "../../components/Footer/footer";
-import Header from "../../components/Header/header";
 import { useParams, Navigate } from "react-router-dom";
 import logements from '../../datas/logements.json';
 import Host from '../../components/Host/host'
@@ -8,9 +6,6 @@ import Tags from "../../components/Tags/tag";
 import Rating from "../../components/Rating/rating";
 import Collapse from "../../components/Collapse/collapse";
 
-
-
-
 export default function PropertyListing() {
 
     const { id } = useParams();
@@ -18,7 +13,7 @@ export default function PropertyListing() {
 
     
    if (!logement) {
-        return  <Navigate to="/errorPage" />
+        return  <Navigate to="*" />
         
       }
 
@@ -33,9 +28,7 @@ export default function PropertyListing() {
   }
 ]
     return (
-        <div>
-        <Header /> 
-       
+        <div>       
         <SlideShow pictures={logement.pictures} />
         <div className="propertyBody1">
           <div className="title-container">
@@ -55,7 +48,6 @@ export default function PropertyListing() {
           </div>
         </div>        
         <Collapse data={collapseData} />          
-        <Footer />
         </div>
     );
 }
