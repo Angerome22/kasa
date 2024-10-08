@@ -1,4 +1,3 @@
-
 export default function Rating({rating}) {
 
     const maxRating = 5;

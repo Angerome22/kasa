@@ -1,11 +1,24 @@
 // media responsive à ajouter
+.App-header {
+    margin : 40px 100px 38px 100px;
+}
+
+.app-banner {    
+    background: map-get($colors, secondary);
+    margin: 0px 100px 38px 100px;
+}
+
+
 .about-collapse {
+    
 
     .collapse-container {
         display: flex;
         flex-direction: column;
         margin: 0px 208.5px 38px 208.5px;
-        
+        max-width: 1023px;
+        height: 298px;
+        width: 100%;
     }
     
     .collapse-item { 
@@ -13,8 +26,12 @@
         width: 1023px;       
         height: 54px;    
         margin: 0; 
-        margin-bottom: 38px;     
-    }
+        margin-bottom: 30px;     
+    
+    .collapse-title {
+        font-size: 24px;
+    }    
+        
     .collapse-content{   
         background-color: #F6F6F673;
         font-size: 18px;
@@ -28,6 +45,7 @@
         overflow: hidden;
         transition: max-height 0.8s ease, padding 0.8s ease; 
                 }
+
 
         .collapse-container.show {
             max-height: 500px;
@@ -47,4 +65,4 @@
     
   }
 }
- 
+} 

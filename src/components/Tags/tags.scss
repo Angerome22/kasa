@@ -4,8 +4,8 @@
     height: 25px;
 
     .tags-button {   
-    background-color: #ff6060;
-    color: #ffffff;
+    background-color: map-get($colors, primary);
+    color: map-get($colors, secondary);
     font-weight: 500;
     font-size: 14px;
     border: none;

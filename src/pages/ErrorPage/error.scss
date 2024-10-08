@@ -2,16 +2,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
-    align-items: center;   
-    height: 100vh;
+    align-items: center;       
     
-}
-.errorTitle {        
+
+.errorTitle { 
+    width: 597px;
+    height: 263px;
     font-size: 288px;
     font-weight: 700;    
-    text-align: center;    
-    color: #FF6060;   
+    text-align: center; 
+    align-items: center;   
+    color: map-get($colors, primary);   
     padding:0;
+    margin-bottom: 149px;
+    margin-top: 70px;
 }
 
 .errorText {    
@@ -19,13 +23,15 @@
     font-weight: 500;
     line-height: 51.34px;
     text-align: left;
-    color: #FF6060; 
+    color: map-get($colors, primary);
+    
 }
 
 .errorLink {    
     font-size: 18px;
     font-weight: 500;
     line-height: 25.67px;
-    margin-bottom: 149px;
+    margin: 149px 0px;
     text-decoration: underline;    
+}
 }

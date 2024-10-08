@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 const CollapseItem = ({ label, children}) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -9,12 +8,9 @@ const CollapseItem = ({ label, children}) => {
         setIsOpen(!isOpen);
     }
 
-
 return (
 <div>
-      <div className="collapse-item"
-              
-      >
+      <div className="collapse-item">
         <h4 className="collapse-title">{label}</h4>
                     <i
                     onClick={toggleCollapse}   

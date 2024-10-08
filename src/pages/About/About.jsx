@@ -10,6 +10,7 @@ export default function About() {
         <div className="about-collapse">
             <Collapse data={aboutData} />  
         </div>  
+       
         </div>
     )
 }

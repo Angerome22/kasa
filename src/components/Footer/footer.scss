@@ -20,7 +20,7 @@
   .text-footer {
     width: 513px;
     height: 46px; 
-    color:#FFFFFF;
+    color:map-get($colors, secondary);
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 500;

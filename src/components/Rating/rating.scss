@@ -9,7 +9,7 @@
     }
 
     .active{
-      color: #ff6060;
+      color: map-get($colors, primary);
     }
     .inactive{
        color: #e3e3e3; 

@@ -3,15 +3,16 @@
 
     width: 1240px;   
     border-radius: 25px;
-    background: #F6F6F6;  
-    margin: 0px 100px 55px 100px;  
+    background: map-get($colors, secondary);  
+    margin: 0px 100px 50px 100px;  
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;   
     box-sizing: border-box;
-    gap: 55px;
+    gap: 50px;
     padding: 55px 0px 55px 55px;      
   } 
+
 
   
   @media (max-width: 480px) {

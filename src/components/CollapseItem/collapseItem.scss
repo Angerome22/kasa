@@ -7,16 +7,14 @@
     align-items: center; 
     height: 52px; 
     cursor: pointer;
-    padding: 10px;
-    background-color: #FF6060;
+    padding: 0px 10px;
+    background-color: map-get($colors, primary);
     border-radius: 5px;
-    color: white;
+    color: map-get($colors, secondary);
     width: 582px;   
     
   
-      .collapse-title {    
-        font-size: 24px;
-        font-weight: 700;
+      .collapse-title {
         line-height: 34.22px;
         text-align: left;
       }  

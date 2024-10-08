@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 export default function SlideShow({ pictures }) {
 
 const [currentIndex, setCurrentIndex] = useState(0);

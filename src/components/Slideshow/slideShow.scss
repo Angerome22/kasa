@@ -3,7 +3,7 @@
     height: 415px;
     position: relative;
     overflow: hidden;
-    margin : 45px 100px 50px 100px;
+    margin : 40px 100px 45px 100px;
     border-radius: 5px;   
 }
 
@@ -26,12 +26,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);    
-    color: white;
+    color: map-get($colors, secondary);
     border: none;
     padding: 10px;
-    cursor: pointer;
-    font-size: 48px;
+    cursor: pointer;    
     z-index: 1; 
+    font-size: 78px;   
 }
 
 .slideShow-button.prev{
@@ -42,17 +42,12 @@
     right: 10px;
 }
 
-.fa-chevron-left, .fa-chevron-right{
-    width: 46.68px;
-    height: 79.2px;   
-}
-
 .picture-counter {
     position: absolute;
     bottom: 30px;
     right: 50%;
     transform: translateX(50%);
-    color: #ffffff;
+    color: map-get($colors, secondary);
     font-size: 18px;
     font-weight: 500;    
     padding: 5px 10px;

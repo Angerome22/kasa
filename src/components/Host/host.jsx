@@ -1,4 +1,3 @@
-
 export default function Host({ name, picture }) {
     const modifiedName = name.replace(' ', '\n');
 

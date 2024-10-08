@@ -10,11 +10,9 @@ export default function PropertyListing() {
 
     const { id } = useParams();
     const logement = logements.find((logement) => logement.id === id);
-
     
    if (!logement) {
         return  <Navigate to="*" />
-        
       }
 
   const collapseData = [
