@@ -35,7 +35,7 @@ const prevPicture = () => {
             )}
 
             {pictures.length > 1 && (
-            <div className="picture-counter">{currentIndex + 1} / {pictures.length}</div>
+            <div className="picture-counter">{currentIndex + 1}/{pictures.length}</div>
             )}
             
             

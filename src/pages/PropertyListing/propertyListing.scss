@@ -33,12 +33,15 @@
   .collapse-container {
     display:flex;
     flex-direction: row;    
-    max-width: 1240px;
-    height: 52px;
+    max-width: 1240px;    
     width: 100%;
     justify-content: space-between;
-    margin : 0px 100px 50px 100px;  
+    margin : 15px 100px 50px 100px;  
     
+    .collapse-item {
+      height: 52px;
+    }
+
       .collapse-title {
         font-size: 18px;
       }

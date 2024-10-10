@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const CollapseItem = ({ label, children}) => {
+const CollapseItem = ({ label, children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleCollapse = (e) => {

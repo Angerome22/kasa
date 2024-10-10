@@ -7,8 +7,6 @@
     width: 100%;
     margin : 40px 100px 38px 100px;
   
-  }
-  
   .App-logo {
     width: 210.32px;
     height: 68px;  
@@ -22,8 +20,7 @@
     padding: 0px; 
     }
   
-  .App-link a{
-    
+  .App-link a{    
     font-size: 24px;
     font-weight: 500;
     line-height: 34.22px;
@@ -31,23 +28,61 @@
     text-decoration: none;
     transition: text-decoration 400ms , transform 400ms  ;
     &:focus {
-      text-decoration: underline;
+      border-bottom: solid 1px black;;
     }
-    }  
+    } 
+  } 
+    /*@media (max-width: 1023.99px) {
+      .App-header {
+        height: 46.88px;
+        margin : 20px 20px 27px 20px;
+      }
   
-  /*a:active {
-    
-  } */ 
-  @media (max-width: 768px) {
+      
+  
+      .gallery-card{  
+        width: calc(50% - 55px);
+    }*/
+  
+  
+ /* @include mediamobile() {
     .App-header {
       height: 46.88px;
-      max-width: 335px;     
-         
+      max-width: 1023px;
+      margin : 20px 20px 27px 20px;
+
+      .App-logo {
+        width: 31.74px;
+        height: 36.79px;  
+        }
+        .App-link a{
+          text-transform: uppercase;
+          font-weight: bold;
     }
+  }
+}*/
+@media (max-width: 1023px) {
+  .app-header {
+    margin : 20px 20px 27px 20px;
+    height: auto;
+    margin: 20px;
+  }
 
+  .App-logo {
+    width: 100px;  // Réduire la taille du logo sur mobile
+    height: auto;
+  }
 
+  .App-nav ul {
+    
+    gap: 20px;               // Espacement réduit entre les liens
+  }
 
-    .gallery-card{  
-      width: calc(50% - 55px);
+  .App-link a {
+    font-size: 18px;         // Réduire la taille de la police
+    line-height: 24px;
+    text-align: center;      // Centrer le texte
+    font-weight: bold;       // Rendre les liens plus visibles
+    text-transform: uppercase;  // Majuscules pour tous les liens
   }
 }

@@ -1,5 +1,5 @@
   .gallery-card{  
-    width: calc(33% - 55px);
+    width: calc(33% - 49px);
     height: 340px;
     position:relative;
     border-radius: 10px;     
@@ -35,6 +35,6 @@
 
   @media (max-width: 768px) {
     .gallery-card{  
-      width: calc(50% - 55px);
+      width: 100%;
   }
 }
