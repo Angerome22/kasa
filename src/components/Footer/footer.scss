@@ -9,6 +9,7 @@
     height: 209px;
     background-color: #000000;
     box-sizing:border-box;
+    margin: 0;
   }
   
   .App-logo-footer {
@@ -20,11 +21,9 @@
   .text-footer {
     width: 513px;
     height: 46px; 
-    color:map-get($colors, secondary);
-    font-family: Montserrat;
+    color:map-get($colors, secondary);    
     font-size: 24px;
-    font-weight: 500;
-    line-height: 34.22px; 
+    font-weight: 500;    
     text-align: center; 
     margin-top: 26px;
   }

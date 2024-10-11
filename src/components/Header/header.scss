@@ -1,88 +1,55 @@
-/******************************HEADER*******************/
-.App-header {
+.header {
     display: flex;   
     justify-content: space-between;
     height: 68px;
+    padding-bottom: 50px;
     max-width: 1240px;
     width: 100%;
-    margin : 40px 100px 38px 100px;
-  
-  .App-logo {
-    width: 210.32px;
-    height: 68px;  
+        
+    nav ul{
+      display: flex;      
+      list-style: none;  
+      gap: 57px; 
+      padding: 0px; 
     }
   
-  .App-nav ul{
-    display: flex;
-    justify-items: right;
-    list-style: none;  
-    gap: 57px; 
-    padding: 0px; 
-    }
-  
-  .App-link a{    
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 34.22px;
-    text-align: right;
-    text-decoration: none;
-    transition: text-decoration 400ms , transform 400ms  ;
+    a {    
+      font-size: 24px;
+      font-weight: 500;      
+      text-align: right;
+      text-decoration: none;
+      transition: text-decoration 400ms , transform 400ms  ;
     &:focus {
       border-bottom: solid 1px black;;
     }
     } 
-  } 
-    /*@media (max-width: 1023.99px) {
-      .App-header {
-        height: 46.88px;
-        margin : 20px 20px 27px 20px;
-      }
-  
-      
-  
-      .gallery-card{  
-        width: calc(50% - 55px);
-    }*/
-  
-  
- /* @include mediamobile() {
-    .App-header {
-      height: 46.88px;
-      max-width: 1023px;
-      margin : 20px 20px 27px 20px;
-
-      .App-logo {
-        width: 31.74px;
-        height: 36.79px;  
-        }
-        .App-link a{
-          text-transform: uppercase;
-          font-weight: bold;
-    }
   }
-}*/
-@media (max-width: 1023px) {
-  .app-header {
-    margin : 20px 20px 27px 20px;
-    height: auto;
-    margin: 20px;
-  }
-
-  .App-logo {
-    width: 100px;  // Réduire la taille du logo sur mobile
-    height: auto;
-  }
-
-  .App-nav ul {
     
-    gap: 20px;               // Espacement réduit entre les liens
+@media (max-width: 1023px) {
+  .header {
+   height: 46.88px;   
+   margin: 0px 0px 27px 20px;
+   padding-bottom: 0;   
+   gap: 0;
+   width: 335px;
+   
+  img {      
+    height: 46.88px;
+    width: 145px;
+    padding: 0px;
+    }
+
+  nav ul {
+    width: 190px;
+    height: 17px;
+    box-sizing: border-box;
+    margin: 16px 0px 16px 15px;
+    padding: 0;
   }
 
-  .App-link a {
-    font-size: 18px;         // Réduire la taille de la police
-    line-height: 24px;
-    text-align: center;      // Centrer le texte
-    font-weight: bold;       // Rendre les liens plus visibles
+  a {    
+    font-size: 12px;       
     text-transform: uppercase;  // Majuscules pour tous les liens
   }
+}
 }

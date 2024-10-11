@@ -4,10 +4,12 @@ import Footer from "../Footer/footer";
 
 export default function Layout() {
     return ( 
-        <>
+        <div>
+            <div className="main">
             <Header />
             <Outlet />
+            </div>
             <Footer />
-        </>
+        </div>
     );
 };

@@ -22,8 +22,21 @@
 body {
   overflow-x: hidden;
   margin: 0;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat'; 
+     
 }
+ .main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;   
+  margin : 40px 100px 0px 100px;   
+
+   @media (max-width: 1023px) {
+    margin : 20px 20px 0px 20px;
+
+  }
+
+ }
 
 a:-webkit-any-link{
   color: black;
