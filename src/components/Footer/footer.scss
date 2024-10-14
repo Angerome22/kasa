@@ -27,3 +27,16 @@
     text-align: center; 
     margin-top: 26px;
   }
+
+
+  @media (max-width: 1023px) {
+  .text-footer{
+    font-size: 12px;
+    font-weight: 500;
+    width: 133.59px;
+    height: 46px;
+    margin-top: 0;
+    
+
+}
+  }

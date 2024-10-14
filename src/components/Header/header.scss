@@ -28,10 +28,11 @@
 @media (max-width: 1023px) {
   .header {
    height: 46.88px;   
-   margin: 0px 0px 27px 20px;
+   margin: 0px 0px 27px 0px;
    padding-bottom: 0;   
    gap: 0;
-   width: 335px;
+   max-width: 1023px;
+   width: 100%;
    
   img {      
     height: 46.88px;
@@ -40,16 +41,18 @@
     }
 
   nav ul {
+    justify-content: flex-end;
     width: 190px;
     height: 17px;
     box-sizing: border-box;
-    margin: 16px 0px 16px 15px;
-    padding: 0;
+    margin: 16px 0px 16px 0px;
+    gap: 26px;
   }
-
+ 
   a {    
     font-size: 12px;       
-    text-transform: uppercase;  // Majuscules pour tous les liens
-  }
+    text-transform: uppercase;
+   
+}
 }
 }

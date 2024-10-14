@@ -15,15 +15,15 @@
   } 
 
  
- @media (max-width: 768px) {
+ @media (max-width: 1023px) {
     .App-gallery {
+      max-width: 1023px;
+      width: 100%;
       flex-direction: column;
-    }
-
-    .gallery-item {
-        width: 100%; // Les images prendront 100% de la largeur de l'écran, une par ligne
-    }
-    
+      padding: 0px  0px 27px 0px;      
+      border-radius: 5px;
+      margin-bottom: 0;
+    }    
  } 
 
   
