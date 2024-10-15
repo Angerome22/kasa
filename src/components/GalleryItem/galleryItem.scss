@@ -1,4 +1,4 @@
-  .gallery-card{  
+  .gallery-item{  
     width: calc(33% - 49px);
     height: 340px;
     position:relative;
@@ -7,7 +7,7 @@
     
   }
   
-  .gallery-card .card {
+  .gallery-item .card {
     width: 340px;
     height: 340px;
     
@@ -34,12 +34,12 @@
   }
 
   @media (max-width: 1023px) {
-    .gallery-card{  
+    .gallery-item{  
       max-width: 1023px; 
       width: 100%;     
   }
 
-    .gallery-card .card {
+    .gallery-item .card {
       max-width: 1023px;
       width: 100%;
       height: 255px;

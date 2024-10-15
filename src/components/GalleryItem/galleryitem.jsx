@@ -12,7 +12,7 @@ const GalleryItem = ({ cover, id, title}) => {
 return (
       /*<div className="gallery-item" onClick={toggleGallery}>*/
       
-      <div className="gallery-card">
+      <div className="gallery-item">
             
             <Link to={`/PropertyListing/${id}`}>
                     <img src={cover} className="gallery-picture" alt="apartment" /></Link>

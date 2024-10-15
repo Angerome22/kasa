@@ -5,7 +5,10 @@ export default function ErrorPage() {
         <div className="errorPage">
             <div className="errorContainer">
                 <div className="errorTitle">404</div>
-                <div className="errorText">Oups! La page que vous demandez n'existe pas</div>
+                <div className="errorTextContainer">
+                    <div className="errorText1">Oups! La page que</div>
+                    <div className="errorText2">vous demandez n'existe pas</div>
+                </div>    
                 <div className="errorLink"> <Link to="/">Retourner sur la page d'accueil</Link> </div>
             </div>
         </div>

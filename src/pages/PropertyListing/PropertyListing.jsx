@@ -16,7 +16,7 @@ export default function PropertyListing() {
       }
 
   const collapseData = [
-    { label: "Description", content: <div> <p>{logement.description}</p> </div>},
+    { label: "Description", content:  <p>{logement.description}</p> },
     { label: "Equipements", content: (
         <ul> {logement.equipments.map((equipment, index) => (
           <li key={index}>{equipment}</li>

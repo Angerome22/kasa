@@ -8,8 +8,8 @@ export default function About() {
         <div>
         <Banner picture={pictureBanner2} />
         <div className="about-collapse">
-            <Collapse data={aboutData} />  
-        </div>  
+        <Collapse data={aboutData} />  
+        </div>
        
         </div>
     )

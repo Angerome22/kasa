@@ -15,7 +15,7 @@ const prevPicture = () => {
 
 
     return (         
-        <div className="App-slideShow">
+        <div className="slideShow">
           {pictures.length > 1 && (  
             <div role="button" onClick={prevPicture} className="slideShow-button prev fa-solid fa-chevron-left "></div>
           )}  

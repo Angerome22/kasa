@@ -2,20 +2,16 @@
 
  .collapse-item {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center; 
-    height: 0px; 
     cursor: pointer;
     padding: 0px 10px;
     background-color: map-get($colors, primary);
     border-radius: 5px;
     color: map-get($colors, secondary);
-    width: 582px;   
-    
+    transition: max-height 0.8s ease, padding 0.8s ease;  
   
-      .collapse-title {
-        line-height: 34.22px;
+      .collapse-title {        
         text-align: left;
       }  
 
@@ -26,7 +22,7 @@
         font-size: 32px;
         width: 32px;
         height: 32px;
-        padding: 4px 8px 4px 8px;
+        padding: 4px 8px;
         transition: transform 0.3s ease;
       }
 
@@ -34,5 +30,11 @@
         transform: rotate(180deg); 
       }
 
-      
+      .collapse-content {
+        background-color: #F6F6F673;
+        font-weight: 400;
+        text-align: justify;
+        padding: 10px;
+        overflow: hidden;
+      }
     }

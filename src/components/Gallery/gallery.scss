@@ -1,5 +1,5 @@
 /******************************GALERRY*******************/
-.App-gallery {
+.gallery {
 
     width: 1240px;   
     border-radius: 25px;
@@ -16,7 +16,7 @@
 
  
  @media (max-width: 1023px) {
-    .App-gallery {
+    .gallery {
       max-width: 1023px;
       width: 100%;
       flex-direction: column;

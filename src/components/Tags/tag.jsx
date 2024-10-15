@@ -2,7 +2,7 @@ export default function Tags({tags}) {
     
     return ( 
         
-        <div className="App-tags"> 
+        <div className="tags"> 
         {tags.map((tag, index) => (
             <span key={index} className="tags-button">
                 {tag}

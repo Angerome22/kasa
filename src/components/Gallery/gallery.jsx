@@ -5,7 +5,7 @@ export default function Gallery() {
 
     return ( 
         
-        <div className="App-gallery">
+        <div className="gallery">
             {logements.map((logement) => (
                 <GalleryItem
                     key={logement.id}

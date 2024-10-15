@@ -3,7 +3,7 @@ export default function Host({ name, picture }) {
 
     return ( 
         
-        <div className="App-host">            
+        <div className="host">            
             <h2 className="host-name" >{modifiedName}</h2>           
             <img src={picture} className="host-picture" alt="portrait de l'hôte" />
         </div>

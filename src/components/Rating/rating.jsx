@@ -4,7 +4,7 @@ export default function Rating({rating}) {
     
     return ( 
         
-        <div className="App-rating">
+        <div className="rating">
         {Array.from({ length: maxRating }, (v, i) => (
             <i
                 key={i}
