@@ -3,23 +3,10 @@
     height: 340px;
     position:relative;
     border-radius: 10px;     
-    box-sizing: border-box; 
-    
+    box-sizing: border-box;
+    overflow: hidden;     
   }
-  
-  .gallery-item .card {
-    width: 340px;
-    height: 340px;
-    
-  }
-  
-  .gallery-picture {
-    object-fit: cover;
-    width: 100%;
-    height: 340px;
-    border-radius: 10px;
-    position: relative;
-  }
+
   .gallery-item::before {
     content: '';
     content: '';
@@ -29,9 +16,25 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 70%);
-  z-index: 1;  // Place le dégradé entre l'image et le titre
-  border-radius: 10px;  // Pour garder les coins arrondis
+  z-index: 1;  
+  border-radius: 10px;  
   }
+
+  .gallery-item .card {
+    width: 340px;
+    height: 340px;
+  }
+  
+  .gallery-picture {
+    object-fit: cover;
+    width: 100%;
+    height: 340px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+  }
+
+ 
   .gallery-title {
     position: absolute;
     font-size: 12px;
