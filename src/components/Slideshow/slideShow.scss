@@ -53,4 +53,32 @@
     padding: 5px 10px;
     border-radius: 5px; 
 }
- 
+
+@media (max-width: 1023px) {
+
+    .slideShow {
+        max-width: 1023px;
+        width: 100%;
+        height: 255px;
+    }
+    
+    .slideShow-picture {          
+        height: 100%;
+        width: auto;
+    }
+       
+    .slideShow-button {
+        font-size: 28px;   
+    }
+    
+    .slideShow-button.prev{
+        left: 5px;
+    }
+    
+    .slideShow-button.next {
+        right: 5px;
+    }    
+    .picture-counter {
+        display: none;
+    }
+}

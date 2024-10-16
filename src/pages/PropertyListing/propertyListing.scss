@@ -1,6 +1,5 @@
 .propertyBody1 {  
     display: flex;  
-    flex-direction: row;
     justify-content: space-between;
     height: 77px;
     max-width: 1240px;
@@ -21,7 +20,6 @@
 }
   .propertyBody2 {  
     display: flex;  
-    flex-direction: row;
     justify-content: space-between;
     height: 36px;
     max-width: 1240px;
@@ -68,10 +66,104 @@
   }
   }
   @media (max-width: 1023px) {
-    .collapse-container {
-      flex-direction: column;  
+    
+    .propertyBody1 { 
+      position: relative; 
+      flex-direction: column;
+      height: auto;
+      max-width: 1023px;
+      width: 100%;
+      margin-top: 10px;
+      padding-bottom: 14px;
+  
+      .title {   
+      font-size: 18px;
     }
-       
+  
+    .location {    
+      font-size: 14px;
+      padding-top: 5px;
+    }
+  }
+  
+    .rating{
+      position: relative;
+      z-index: 1;
+      text-align: center;
+
+    }
+  
+    .host-container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      transform: translateY(115%)
+      
+    }
+      .host {  
+          
+        .host-picture {
+            width: 32px;
+            height: 32px;
+        }
+        .host-name {
+            font-size: 12px;
+            line-height: 17.11px;
+        }
+        }
+
+.propertyBody2 {  
+    flex-direction: column;
+    margin-top: 0; 
+     .tag-container {
+      position: relative;
+
+  }
+}
+    .collapse-container {
+      display:flex;   
+      flex-direction: column;   
+      max-width: 1023px;    
+      width: 100%;
+      margin: 20px 0px;
+          
+      
+      .collapse-item {
+        height: 30px;
+        width: auto;
+        margin-top: 20px;
+        .arrow-icon {
+          font-size: 16px;
+          width: 16px;
+          height: 16px;
+        }
+  
+      }
+  
+        .collapse-title {
+          font-size: 13px;
+          line-height: 18.54px;
+        }
+  
+        .collapse-content {
+          box-sizing: border-box;
+          width: 100%;
+  
+            p {
+              text-align: justify;
+              padding: 10px;
+              margin: 0;
+            }
+            ul {
+              margin:0;
+              padding: 10px;   
+          }
+              li {           
+                list-style: none;   
+        }
+    }
+    }   
         
         
 }

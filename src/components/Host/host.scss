@@ -4,7 +4,7 @@ flex-direction: row;
 justify-content: flex-end;
 align-items: center;
 height: 64px;
-}
+
 
 .host-picture {
     width: 64px;
@@ -29,4 +29,5 @@ height: 64px;
     color:map-get($colors, primary);
     padding-right: 10px;
       
+}
 }

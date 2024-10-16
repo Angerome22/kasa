@@ -25,44 +25,61 @@
             padding-left: 35px;
             margin: 30px auto 40px auto;
             font-size: 18px;
+            background-color: #F6F6F673;
+            font-weight: 400;
+            text-align: justify;
+            padding: 10px;
+            overflow: hidden;
                     }
 
                 
         }    
     }   
     @media (max-width: 1023px) {
+        .header {
+            margin-bottom: 19px;  
+        }
+
         .banner{
             height: 111px;
+            margin-bottom: 19px;
         }
+        .about-collapse{
+            margin: 0;
 
             .collapse-container {              
             margin: 0;           
-            height: 180px;            
+            height: 180px;
+            margin-bottom: 55px;
+
         
             .collapse-item {
                 height: 30px;
-                         
-                margin-bottom: 20px;
-            
+                margin-bottom: 5px;
+                max-width: 1023px;
+                width: auto;
             
             .collapse-title {
                 font-size: 13px;
                 line-height: 18.54px;
-            } 
-            
-            .collapse-content{   
-                font-size: 12px;
-                
-                margin-bottom: 5px; 
-                        }
-
+            }
             .arrow-icon {
                 font-size: 16px;
                 width: 16px;
                 height: 9.14px;
                 padding: 1px 4px;
               }
+        
         }
-  
-        }
+            .collapse-content{   
+                font-size: 12px;
+                line-height: 17.11px;
+                margin: 15px 5px 25px 20px;
+                padding: 2px; 
+                text-align: justify;
+                width: 89%;    
+                        }
+        
     }
+    }
+}
