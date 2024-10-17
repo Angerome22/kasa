@@ -12,7 +12,7 @@
     
         .collapse-item { 
             width: 100%;
-            margin-bottom: 30px;     
+            margin-bottom: 0px;     
         
         .collapse-title {
             font-size: 24px;
@@ -23,17 +23,20 @@
             max-width: 1043px;
             text-align: left;
             padding-left: 35px;
-            margin: 30px auto 40px auto;
+            margin: 20px auto 35px auto;
             font-size: 18px;
             background-color: #F6F6F673;
             font-weight: 400;
             text-align: justify;
-            padding: 10px;
+            padding: 2px;
             overflow: hidden;
                     }
-
+        &.active .collapse-content {
+            max-height: 500px; 
+            padding: 2px; 
                 
-        }    
+        } 
+    }   
     }   
     @media (max-width: 1023px) {
         .header {
@@ -42,20 +45,19 @@
 
         .banner{
             height: 111px;
-            margin-bottom: 19px;
+            margin-bottom: 0px;
         }
         .about-collapse{
             margin: 0;
 
             .collapse-container {              
             margin: 0;           
-           
-            margin-bottom: 55px;
+            margin-bottom: 25px;
 
         
             .collapse-item {
                 height: 30px;
-                margin-bottom: 5px;
+                margin-bottom: 0px;
                 max-width: 1023px;
                 width: auto;
             
@@ -74,11 +76,14 @@
             .collapse-content{   
                 font-size: 12px;
                 line-height: 17.11px;
-                margin: 15px 5px 25px 20px;
-                padding: 2px; 
+                margin: 5px 5px 5px 20px;
+                padding: 0; 
                 text-align: justify;
                 width: 89%;    
                         }
+            &.active .collapse-content {
+            max-height: 50px; 
+            }                        
         
     }
     }

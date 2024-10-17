@@ -1,12 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const CollapseItem = ({ label, children }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [maxHeight, setMaxHeight] = useState("0px");
+    const contentRef = useRef(null);
+
 
     const toggleCollapse = (e) => {
       e.stopPropagation();
         setIsOpen(!isOpen);
     }
+
+    useEffect(() => {
+      if (isOpen) {
+        setMaxHeight(`${contentRef.current.scrollHeight}px`); // Ajuste dynamiquement en fonction du contenu
+      } else {
+        setMaxHeight("0px");
+      }
+    }, [isOpen]);
 
 return (
 <div>
@@ -20,8 +31,17 @@ return (
                     
                   ></i>
                 </div>
-          
-                {isOpen && <div className="collapse-content">{children}</div>}
+          <div
+                ref={contentRef}
+        className={`collapse-content ${isOpen ? "open" : ""}`}
+        style={{
+          maxHeight: maxHeight, 
+          overflow: "hidden",
+          transition: "max-height 0.4s ease", 
+        }}
+        >
+        {children}
+      </div>
               </div>
             );
           };
