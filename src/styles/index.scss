@@ -11,10 +11,10 @@
 @import '../components/Tags/tags.scss';
 @import '../components/Rating/rating.scss';
 
-
 @import '../pages/ErrorPage/error.scss';
 @import '../pages/About/about.scss';
 @import '../pages/PropertyListing/propertyListing.scss';
+@import '../pages/Home/home.scss';
 
 
 body {
@@ -26,8 +26,11 @@ body {
  .main {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;   
-  margin : 40px 100px 0px 100px;   
+  max-width: auto;
+  align-items: center;
+  justify-content: center;   
+  margin : 40px 100px 0px 100px; 
+ 
 
    @media (max-width: 1023px) {    
     margin : 20px 20px 0px 20px;

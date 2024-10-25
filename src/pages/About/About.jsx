@@ -5,12 +5,11 @@ import aboutData from "../../datas/about.json"
 
 export default function About() {
     return (
-        <div >
+        <div>
         <Banner className="banner" picture={pictureBanner2} />
         <div className="about-collapse">
         <Collapse data={aboutData} />  
         </div>
-       
         </div>
     )
 }

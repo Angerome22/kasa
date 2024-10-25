@@ -10,6 +10,7 @@ const nextPicture = () => {
 
 const prevPicture = () => {
     setCurrentIndex((prevIndex) =>
+        
         prevIndex === 0 ? pictures.length - 1 : prevIndex - 1);
 };
 

@@ -39,6 +39,7 @@
     }   
     }   
     @media (max-width: 1023px) {
+
         .header {
             margin-bottom: 19px;  
         }
@@ -49,10 +50,12 @@
         }
         .about-collapse{
             margin: 0;
+            flex: 1;
 
             .collapse-container {              
             margin: 0;           
             margin-bottom: 25px;
+            max-width: auto;
 
         
             .collapse-item {
@@ -87,4 +90,11 @@
         
     }
     }
-}
+    .footer{
+        position: absolute;
+        bottom:0;
+     
+       } 
+         
+} 
+
