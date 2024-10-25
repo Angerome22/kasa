@@ -47,5 +47,7 @@ export default function PropertyListing() {
         </div>        
         <Collapse data={collapseData} />          
         </div>
+        
+        
     );
 }
