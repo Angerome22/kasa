@@ -64,6 +64,10 @@
               list-style: none;   
       }
   }
+  .spacer-property {
+    height: 0px;
+    width: 100%;
+  }
   }
   @media (max-width: 1023px) {
     
@@ -164,7 +168,11 @@
         }
     }
     }   
-        
+  .spacer-property {
+    height: 159px;
+    width: 100%;
+    display: block;
+  }      
         
 }
    

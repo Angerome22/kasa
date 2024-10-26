@@ -11,6 +11,7 @@ export default function ErrorPage() {
                 </div>    
                 <div className="errorLink"> <Link to="/">Retourner sur la page d'accueil</Link> </div>
             </div>
+            <div class="spacer-error"></div>
         </div>
     )
 }

@@ -45,9 +45,8 @@ export default function PropertyListing() {
             <Rating rating={logement.rating} />
           </div>
         </div>        
-        <Collapse data={collapseData} />          
+        <Collapse data={collapseData} /> 
+        <div class="spacer-property"></div>         
         </div>
-        
-        
     );
 }

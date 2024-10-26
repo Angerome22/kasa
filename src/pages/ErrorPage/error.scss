@@ -38,6 +38,10 @@
     margin: 149px 0px;
     text-decoration: underline;    
 }
+.spacer-error {
+    height: 0px;
+    width: 100%;
+}
 
 @media (max-width: 1023px) {
     .errorTitle { 
@@ -67,9 +71,15 @@
         font-size: 14px;
         font-weight: 500;
         line-height: 19.96px;
-        margin: 113px 0px;
+        margin-top: 113px;
+        margin-bottom: 154px;
         text-decoration: underline;    
     }
-
+    .spacer {
+        height: 267px;
+        width: 100%;
+        display: block;
+        
+    }
 
 }

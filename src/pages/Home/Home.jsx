@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <div>        
         <Banner picture={pictureBanner1} alt="paysage mer falaise " text="Chez vous, partout et ailleurs" dark />
-        <Gallery />            
+        <Gallery />       
         </div>
     )
 }
